@@ -15,7 +15,7 @@ const TopNavbar = () => {
           <div className="w-full max-w-3xl px-5 relative hidden md:block">
             <input
               type="text"
-              placeholder="Search for product"
+              placeholder="Search for product (e.g. fish, apple, oil)"
               class="search-input "
             />
             <span className="absolute text-xl top-4 right-8 cursor-pointer text-gray-400">

@@ -41,7 +41,12 @@ const DiscountedProduct = () => {
                 {product.name}
               </h2>
               <div className="flex items-center justify-between font-openSans my-1">
-                <h3 className="font-bold font-inter text-xl">{`$${product.price}`}</h3>
+                <div className="flex items-center space-x-2">
+                  <h3 className="font-bold font-inter text-xl">{`$${product.price}`}</h3>
+                  <span className="font-inter text-gray-400 text-sm">
+                    <del>$19.00</del>
+                  </span>
+                </div>
                 <div className="add-icon">
                   <RiAddBoxFill />
                 </div>

@@ -23,12 +23,14 @@ const Popular = () => {
             shipping.
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-10 relative">
           {products.map((product) => (
             <div key={product.id} className="shadow p-2  bg-white rounded-sm">
               <div className="overflow-hidden">
                 <img className="cursor-pointer transition-all ease-in duration-200 hover:scale-110 " src={product.img} alt="product" />
               </div>
+
+              <span className="offet-btn absolute top-3 left-3 rounded-2xl text-xs">{product.stack ? product.stack : "stack Out"}</span>
               <span className="text-xs text-gray-400 font-medium">each</span>
               <h2 className="text-paragraph font-medium text-sm font-openSans">
                 {product.name}
