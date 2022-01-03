@@ -24,4 +24,7 @@
   .nav-link{
       @apply mr-8 hover:text-green-600 text-sm font-medium font-inter
   }
+  .hero-bg{
+    @apply rounded-md bg-cover bg-no-repeat transition-all ease-linear duration-300  cursor-pointer hover:scale-105
+  }
 }

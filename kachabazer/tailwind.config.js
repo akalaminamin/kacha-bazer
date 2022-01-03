@@ -12,6 +12,11 @@ module.exports = {
       padding: "1rem",
     },
     extend: {
+      backgroundImage: {
+        'freshBg': "url('https://kachabazar-store.vercel.app/_next/image?url=%2Fbanner-1.jpg&w=1080&q=75')",
+        "tastBg":"url('https://kachabazar-store.vercel.app/_next/image?url=%2Fbanner-2.jpg&w=1080&q=75')",
+        "heroBg":"url('https://kachabazar-store.vercel.app/_next/image?url=%2Fslider%2Fslider-1.jpg&w=1080&q=75')",
+      },
       fontFamily: {
         inter: "'Inter', sans-serif",
         openSans: "'Open Sans', sans-serif",
