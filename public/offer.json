@@ -1,0 +1,30 @@
+
+[
+    {
+        "img":"https://i.ibb.co/LxdqHNP/ins1.jpg",
+        "name":"October Gift Voucher",
+        "price":"230",
+        "dic":"10% Off"
+        
+        },
+    {
+        "img":"https://i.ibb.co/GksKspS/ins2.jpg",
+        "name":"Winter Gift Voucher",
+        "price":"160",
+        "dic":"12% Off"
+        },
+    {
+        "img":"https://i.ibb.co/R08t2BQ/ins4.jpg",
+        "name":"Summer Gift Voucher",
+        "price":"200",
+        "dic":"15% Off"
+        
+        },
+    {
+        "img":"https://i.ibb.co/Yjhv95W/ins3.jpg",
+        "name":"August Gift Voucher",
+        "price":"155",
+        "dic":"20% Off"
+        
+        }
+]

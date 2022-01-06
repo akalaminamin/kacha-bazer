@@ -1,0 +1,9 @@
+.aboutbanner{
+    background-image: url("./img/about-banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.AboutUs{
+    margin-top: 200px;
+}

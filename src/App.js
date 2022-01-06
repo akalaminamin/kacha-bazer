@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+// import Slider from './Team-project/Slider';
+import About from './About';
+import Footer from './Footer/Footer';
+import Privacy from './Privacy/Privacy';
+import TramCondetion from './TramCondetion/TramCondetion';
+import ChackOut from './ChackOut/ChackOut';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <About></About>
+      <Privacy></Privacy>
+      <TramCondetion></TramCondetion>
+      <ChackOut></ChackOut>
+      <Footer></Footer>
     </div>
   );
 }
