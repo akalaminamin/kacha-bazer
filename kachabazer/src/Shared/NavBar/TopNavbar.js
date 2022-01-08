@@ -5,7 +5,11 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import useAuth from "../../Pages/Hooks/useAuth";
 const TopNavbar = () => {
+
+  const {users, logOut} = useAuth();
+
   return (
     <div className="bg-green-600">
       <div className="container py-3">
@@ -36,11 +40,19 @@ const TopNavbar = () => {
                 </span>
                 </Link>
               </span>
+
+              { users.email && <p className ="text-white raw" > Hi {users.displayName} {} </p>}
+              { 
+                users.email ?
+
+                <button className ="m-2 text-white " onClick = {logOut}> Logout </button>
+                :
+
               <span className="icon">
                 <Link to="/login">
                   <RiAccountCircleLine />
                 </Link>
-              </span>
+              </span>}
             </div>
           </div>
         </div>

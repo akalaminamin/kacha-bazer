@@ -1,6 +1,6 @@
 import React from "react";
 import useAuth from "../Hooks/useAuth";
-import useFirebase from "../Hooks/useFirebase";
+
 
 const Login = () => {
   const {
@@ -12,7 +12,7 @@ const Login = () => {
     toggleLogin,
     isLogin,
     handleNameChange,
-  } = useFirebase();
+  } = useAuth();
 
   return (
     <>

@@ -12,8 +12,10 @@ import Footer from "./Shared/Footer/Footer";
 import Login from "./Pages/Login/Login";
 import Cart from "./Pages/Cart/Cart";
 import Checkout from "./Pages/Checkout/Checkout";
+import AuthProvider from "./Pages/Context/AuthProvider";
 function App() {
   return (
+    <AuthProvider>
     <Router>
       <NavBar />
       <Routes>
@@ -30,6 +32,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </AuthProvider>
   );
 }
 
