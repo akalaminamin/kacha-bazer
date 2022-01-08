@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-// import Slider from './Team-project/Slider';
 import About from './About';
 import Footer from './Footer/Footer';
 import Privacy from './Privacy/Privacy';
