@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { RiAddBoxFill } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
+import { useParams, Link } from "react-router-dom";
 import discountAction from "../../../Redux/actions/discountAction";
 const DiscountedProduct = () => {
   const dispatch = useDispatch();
+  const {id} = useParams();
   const { discountProducts, loading } = useSelector((state) => state.discount);
   useEffect(() => {
     dispatch(discountAction());
@@ -30,11 +32,13 @@ const DiscountedProduct = () => {
                     {discountProduct.price} % off
                   </span>
                   <div className="overflow-hidden">
+                    <Link to={`/shop/${discountProduct.id}`}>
                     <img
                       className="cursor-pointer transition-all ease-in duration-200 hover:scale-110 "
                       src={discountProduct.img}
                       alt="product"
                     />
+                    </Link>
                   </div>
                   <span className="text-xs text-gray-400 font-medium">
                     each

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import featuredAction from "../../../Redux/actions/featuredAction";
+import { Link } from "react-router-dom";
 const Featured = () => {
   const dispatch = useDispatch();
   const { featureds, loading } = useSelector((state) => state.featured);
@@ -21,14 +22,14 @@ const Featured = () => {
           {loading
             ? "loading..."
             : featureds.map((featured) => (
-                <div className="group" key={featured.id}>
+                <Link to="/shop" key={featured.id}>
                   <div className="cate-item">
                     <span className="w-10 mr-3">
                       <img src={featured.img} alt="categories" />
                     </span>
                     <h4 className="text-paragraph text-sm">{featured.name}</h4>
                   </div>
-                </div>
+                </Link>
               ))}
         </div>
       </div>

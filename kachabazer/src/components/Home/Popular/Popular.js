@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { RiAddBoxFill } from "react-icons/ri";
 import { useSelector, useDispatch } from "react-redux";
+import { useParams, Link } from "react-router-dom";
 import getProducts from "../../../Redux/actions/productAction";
 const Popular = () => {
   const dispatch = useDispatch();
+  const {id} = useParams();
   const { products, loading } = useSelector((state) => state.products);
   useEffect(() => {
     dispatch(getProducts());
@@ -27,14 +29,16 @@ const Popular = () => {
             : products.map((product) => (
                 <div
                   key={product.id}
-                  className="shadow p-2  bg-white rounded-sm"
+                  className="shadow p-2 bg-white rounded-sm"
                 >
                   <div className="overflow-hidden">
+                    <Link to={`/shop/${product.id}`}>
                     <img
                       className="cursor-pointer transition-all ease-in duration-200 hover:scale-110 "
                       src={product.img}
                       alt="product"
                     />
+                    </Link>
                   </div>
                   <span className="offet-btn absolute top-3 left-3 rounded-2xl text-xs">
                     {product.stack ? product.stack : "stack Out"}

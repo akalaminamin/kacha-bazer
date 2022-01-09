@@ -9,9 +9,9 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
-import initializeFirebaseApp from "../Firebase/Firebase.init";
+import initializeFirebase from "../Firebase/Firebase.init";
 
-initializeFirebaseApp();
+initializeFirebase();
 
 const useFirebase = () => {
   const [name, setName] = useState("");

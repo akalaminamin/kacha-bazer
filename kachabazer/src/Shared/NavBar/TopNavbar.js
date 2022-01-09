@@ -29,13 +29,15 @@ const TopNavbar = () => {
                 <IoMdNotificationsOutline />
               </span>
               <span className="icon relative">
+                <Link to="/cart">
                 <FiShoppingCart />
                 <span className="bg-red-500 w-4 h-4 absolute rounded-full flex items-center justify-center text-xs p-1 top-0 right-0">
                   0
                 </span>
+                </Link>
               </span>
               <span className="icon">
-                <Link to="/">
+                <Link to="/login">
                   <RiAccountCircleLine />
                 </Link>
               </span>
