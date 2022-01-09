@@ -13,4 +13,5 @@ const allContext = useFirebase()
     );
 };
 
+
 export default AuthProvider;
