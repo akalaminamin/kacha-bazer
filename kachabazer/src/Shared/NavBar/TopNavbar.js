@@ -35,7 +35,9 @@ const TopNavbar = () => {
                 </span>
               </span>
               <span className="icon">
-                <RiAccountCircleLine />
+                <Link to="/">
+                  <RiAccountCircleLine />
+                </Link>
               </span>
             </div>
           </div>
