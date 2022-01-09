@@ -4,19 +4,20 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
 import { RiAccountCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const TopNavbar = () => {
   return (
     <div className="bg-green-600">
       <div className="container py-3">
         <div className="flex items-center justify-between">
-          <a href="/">
+          <Link to="/">
             <img src={logo} className="w-36 flex-none" alt="logo" />
-          </a>
+          </Link>
           <div className="w-full max-w-3xl px-5 relative hidden md:block">
             <input
               type="text"
               placeholder="Search for product (e.g. fish, apple, oil)"
-              class="search-input "
+              className="search-input "
             />
             <span className="absolute text-xl top-4 right-8 cursor-pointer text-gray-400">
               <AiOutlineSearch />

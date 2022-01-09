@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineLocalShipping, MdOutlinePayment } from "react-icons/md";
 import { MdOutlineWifiCalling3 } from "react-icons/md";
 import { BsGift } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const HeroArea = () => {
   const supports = [
     {
@@ -46,12 +47,12 @@ const HeroArea = () => {
                 Intrinsicly fashion performance based products rather than
                 accurate benefits...
               </p>
-              <a
-                href="/shop"
+              <Link
+                to="/shop"
                 className="bg-green-600 text-white font-xl px-4 py-2 rounded-md transition-all duration-200 hover:bg-green-700"
               >
                 Shop Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

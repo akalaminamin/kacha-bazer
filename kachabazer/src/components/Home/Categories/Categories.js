@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const categoriesItems = [
   {
@@ -40,7 +41,9 @@ const Categories = () => {
                 </span>
               </h2>
               <p className="font-openSans text-sm mb-5">{item.offer}</p>
-              <button className="shop-btn">Shop Now</button>
+              <Link to="/shop" className="shop-btn">
+                Shop Now
+              </Link>
             </div>
           ))}
         </div>
